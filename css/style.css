@@ -28,8 +28,8 @@ background: #111;
 
 
 .load{
-height: 120px;
-width: 120px;
+height: 200px;
+width: 200px;
 border: 2px solid #2AAA8A;
 }
 
@@ -630,6 +630,7 @@ margin-top:-10px;
 
 .cont{
 width: 100%;
+height: 100%;
 position: relative;
 margin-top:-10px;
 }
@@ -720,7 +721,7 @@ background: orange;
 }
 
 .card {
- background-color: white;
+ background-color: transparent;
  border-radius: 0.25rem;
  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
  display: flex;
