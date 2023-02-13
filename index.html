@@ -2,15 +2,26 @@
 <html>
 <head>
 <title>Aditi Equipment</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/slide.css">
+              
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
+
+
+<div id="loader"><img class="load" src="images/logo.jpg">
+ </div>
+
+<div style="display:none;" id="myDiv">
 <nav>
          <div class="logo">
-           <img class="logo" src="logo6.jpg">
+           <img class="logo" src="images/logo1.jpg">
            </div>
          <input type="checkbox" id="click">
          <label for="click" class="menu-btn">
@@ -18,19 +29,20 @@
          </label>
          <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Our Products</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="contact.html">Contact us</a></li>
          </ul>
       </nav>
             
-            <div class="content">
+            <div class="content" >
             <div id="slide">
             <div class="slideshow-container">
-            <div class="mySlides fade"> <img src="slide1.jpg" style="height:300px;width:100%"> </div>
-            <div class="mySlides fade"> <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%"> </div>
-            <div class="mySlides fade"> <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%"> </div>
-            <div class="mySlides fade"> <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%"> </div>
+            <div class="mySlides fade"> <img class="cont" src="images/slide1.jpg" style="height:300px;width:100%"> </div>
+            <div class="mySlides fade"> <img class="cont" src="images/slide2.jpg" style="height:300px;width:100%"> </div>
+            <div class="mySlides fade"> <img class="cont" src="images/slide3.jpg" style="height:300px;width:100%"> </div>
+            <div class="mySlides fade"> <img class="cont" src="images/slide4.jpg" style="height:300px;width:100%"> </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
             <br>
             <div style="text-align:center"> 
@@ -41,7 +53,7 @@
             </div>
             
             
-<h1 class="head">About us</h1>
+<h2 class="head" >About us</h2>
 We design and manufacture a wide range of Hydraulic Pallet 
 Trucks, Mechanical, Hydraulic and Battery Operated 
 Stacker, Scissors Lift Platrorm, Car Lift and many other 
@@ -52,30 +64,146 @@ interest.
 We trust you will find our products sutiable to your 
 application and favor us your valued enquiries for these 
 items.
-<h2 class="head2">OBJECTIVE AND FOCUS</h2>
-We bench mark the best product in the market and follow 
-the same standards to give our customers the
-best with cost efficient and courteous after sales team which 
-helps us maintain our relationship with our customers.
-We use state of the art technology to get the best output. We 
-follow all the quality measure necessary to give the best
-service to our customers.
-<h2 class="head2">OUR PEOPLE</h2>
-We have a strong team of qualified, experienced and 
-efficient staff to give us the quality product which allows us 
-to 
-maintain a foot-hold in the very competitive elevators 
-industry and our price which are below most at the quality of 
-products that we offer are set to make us a long-term and 
-large player in this market.
-We are the leading company in importing and assembling 
-various type of lift material. Company have own brand of 
-V3F
-drive and control system. Company have huge warehouse 
-of all types of material. We are a team & dedicated to our
-customers services satisfaction. To resolve their complaints 
-on an earliest possible basis. 
-WE ARE ENSURE TO CHANGE YOUR VIEW OF SERVICE.
+<br>
+<br>
+<a class="read" href="about.html">Read More</a>          
+<br>
+<br>
+<h2 class="head">Our Products</h2>
+
+            <div class="slide-container swiper" >
+            
+            <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+            <div class="image-content">
+            <span class="overlay"></span>
+            
+            <div class="card-image">
+            <img src="images/floor.avif" alt="" class="card-img">
+            </div>
+            </div>
+            
+            <div class="card-content">
+            <h2 class="name">Floor Crane</h2>
+            
+            <a href="floor.html" class="button">View More</a>
+            </div>
+            </div>
+            
+            <div class="card swiper-slide">
+            <div class="image-content">
+            <span class="overlay"></span>
+            
+            <div class="card-image">
+            <img src="images/stacker.avif" alt="" class="card-img">
+            </div>
+            </div>
+            
+            <div class="card-content">
+            <h2 class="name">AC/DC Stacker</h2>
+            
+            <a href="stacker.html" class="button">View More</a>
+            </div>
+            </div>
+            <div class="card swiper-slide">
+            <div class="image-content">
+            <span class="overlay"></span>
+            
+            <div class="card-image">
+            <img src="images/goods.avif" alt="" class="card-img">
+            </div>
+            </div>
+            
+            <div class="card-content">
+            <h2 class="name">Industrial Goods Lift</h2>
+            
+            <a href="goods.html" class="button">View More</a>
+            </div>
+            </div>
+            <div class="card swiper-slide">
+            <div class="image-content">
+            <span class="overlay"></span>
+            
+            <div class="card-image">
+            <img src="images/scissor.avif" alt="" class="card-img">
+            </div>
+            </div>
+            
+            <div class="card-content">
+            <h2 class="name">AC/DC Scissor Lift</h2>
+            
+            <a href="scissor.html" class="button">View More</a>
+            </div>
+            </div>
+            <div class="card swiper-slide">
+            <div class="image-content">
+            <span class="overlay"></span>
+            
+            <div class="card-image">
+            <img src="images/lift.avif" alt="" class="card-img">
+            </div>
+            </div>
+            
+            <div class="card-content">
+            <h2 class="name">Passenger Lift</h2>
+            
+            <a href="lift.html" class="button">View More</a>
+            </div>
+            </div>
+            <div class="card swiper-slide">
+            <div class="image-content">
+            <span class="overlay"></span>
+            
+            <div class="card-image">
+            <img src="images/carlift.webp" alt="" class="card-img">
+            </div>
+            </div>
+            
+            <div class="card-content">
+            <h2 class="name">Hydraulic Car Parking</h2>
+            
+            <a href="carlift.html" class="button">View More</a>
+            </div>
+            </div>
+            <div class="card swiper-slide">
+            <div class="image-content">
+            <span class="overlay"></span>
+            
+            <div class="card-image">
+            <img src="images/dock.jpg" alt="" class="card-img">
+            </div>
+            </div>
+            
+            <div class="card-content">
+            <h2 class="name">Dock Levelers</h2>
+            
+            <a href="dock.html" class="button">View More</a>
+            </div>
+            </div>
+            <div class="card swiper-slide">
+            <div class="image-content">
+            <span class="overlay"></span>
+            
+            <div class="card-image">
+            <img src="images/hoist.jpeg" alt="" class="card-img">
+            </div>
+            </div>
+            
+            <div class="card-content">
+            <h2 class="name">Hoist Lift</h2>
+            
+            <a href="hoist.html" class="button">View More</a>
+            </div>
+            </div>
+            
+            </div>
+            </div>
+            
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+            </div>
             
             
             
@@ -85,11 +213,12 @@ WE ARE ENSURE TO CHANGE YOUR VIEW OF SERVICE.
       <div class="container3">
       
       <div class="footer-contact">
-      <h3 class="footer-head"><img class="logo" src="logo6.jpg"></h3>
+      <h3 class="footer-head"><img class="logo" src="images/logo1.jpg"></h3>
       <p class="add">
-      <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
-      <strong> <i class="fa-solid fa-mobile-phone"></i> </strong> 8805218016 / 9307522470<br>
-      <strong> <i class="fa-solid fa-envelope"></i> </strong> <a href="mailto:someone@example.com">aditiequipment@gmail.com</a><br>
+      <div class="text-bot"><h4>Our Address</h4></div>
+      <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
+       <i class="fa-solid fa-mobile-phone"></i> +91 8805218016 / +91 9307522470<br>
+       <i class="fa-solid fa-envelope"></i> aditiequipment@gmail.com<br>
       </p>
       </div>
       
@@ -120,9 +249,13 @@ WE ARE ENSURE TO CHANGE YOUR VIEW OF SERVICE.
       <br> 
       <footer>© Aditi Equipment | All Rights Reserved 2023</footer>            
       
+     
       </div>
       </div>
-      <script src="script.js"></script>
+      </div>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
@@ -178,7 +311,7 @@ WE ARE ENSURE TO CHANGE YOUR VIEW OF SERVICE.
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 8000); // Change image every 8 seconds
+      setTimeout(showSlides, 6000); // Change image every 8 seconds
       }
       
       function plusSlides(position) {
@@ -208,7 +341,8 @@ WE ARE ENSURE TO CHANGE YOUR VIEW OF SERVICE.
       dots[index-1].className += " active";
       }
       
-      
+    
+     
     
       </script>
       

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aditi Equipment</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav>
+         <div class="logo">
+           <img class="logo" src="images/logo1.jpg">
+           </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+         </ul>
+      </nav>
+            
+            <div class="content">
+<h2>Wire Rope Hoist</h2>
+
+<div class="crd">
+<img class="prd" src="images/wire-rope.jpeg">
+</div>
+<br>
+<p>Wire rope hoists utilize wire rope as a hoisting medium, wrapping the wire around a grooved drum to conduct the lift. Wire rope could be used as a hoisting medium in several industry sectors. In demanding or intense lifting applications, wire rope hoists are the best choice.</p>
+<br>
+<a class="read" href="product.html">Go back</a>          
+<br>
+<br>
+
+<div class="container3">
+  
+  <div class="footer-contact">
+  <h3 class="footer-head"><img class="logo" src="images/logo1.jpg"></h3>
+  <p class="add">
+  <div class="text-bot"><h4>Our Address</h4></div>
+  <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
+   <i class="fa-solid fa-mobile-phone"></i> +91 8805218016 / +91 9307522470<br>
+   <i class="fa-solid fa-envelope"></i> aditiequipment@gmail.com<br>
+  </p>
+  </div>
+  
+  <div class="footer-links">
+  <div class="text-bot"><h4>Useful Links</h4></div>
+  <ul>
+  <li><i class="fas fa-chevron-right"></i> <a href="#">Home</a></li>
+  <li><i class="fas fa-chevron-right"></i> <a href="#">Products</a></li>
+  <li><i class="fas fa-chevron-right"></i> <a href="#">About Us</a></li>
+  <li><i class="fas fa-chevron-right"></i> <a href="#">Contact Us</a></li>
+  </ul>
+  </div>
+  
+  
+  <div class="footer-links">
+  <div class="text-bot"><h4>Our Social Networks</h4></div>
+  <br>
+  <div class="social">
+  <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+  <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+  <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+  <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br> 
+  <footer>© Aditi Equipment | All Rights Reserved 2023</footer>            
+  
+ 
+  </div>
+  </div>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init();    
+  
+  function reInitCount(){
+  $(".stat-count").each(function() {
+  $(this).html('0');
+  count($(this));
+  });
+  }
+  
+  function count($this) {
+  var current = parseInt($this.html(), 10);
+  current = current + 1;
+  $this.html(++current);
+  if (current > $this.data('count')) {
+  $this.html($this.data('count'));
+  } else {
+  setTimeout(function() {
+  count($this)
+  }, 1);
+  }
+  }
+  
+  reInitCount();
+  
+  
+  $(window).scroll(function (event) {
+  var scroll = $(window).scrollTop();
+  if(scroll == 0)
+  setTimeout(function(){reInitCount();},500);
+  
+  
+  });
+  
+  
+ 
+  </script>
+  
+       
+</body>
+</html>
