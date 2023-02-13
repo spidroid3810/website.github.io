@@ -39,8 +39,8 @@ border: 2px solid #2AAA8A;
 }
 
 .imgs{
-   height: 350px; 
-   width: 350px;
+   height: 450px;
+   width: 100%;
 }
 
 nav{
@@ -551,6 +551,10 @@ grid-area: message;
 grid-column: 1 / 3;
 }
 
+.imgs{
+   height: 450px;
+   width: 50%;
+}
  
  
  }
