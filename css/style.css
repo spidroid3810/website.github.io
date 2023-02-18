@@ -13,24 +13,23 @@ background: #111;
 }
 
 #loader{
- position:absolute;
- top:50%;
- left:50%;
- transform:translate(-50%,-50%);
- background:transparent;
- box-shadow: 0 0 0 0 #2AAA8A;
- animation:pl1 1s infinite;
- }
- @keyframes pl1 {
-   100% {box-shadow: 0 0 0 30px #0000}
- }
-  
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:transparent;
+box-shadow: 0 0 0 0 #2AAA8A;
+animation:pl1 1s infinite;
+}
+@keyframes pl1 {
+ 100% {box-shadow: 0 0 0 30px #0000}
+}
 
 
 .load{
 height: 200px;
 width: 200px;
-border: 2px solid #2AAA8A;
+border: 5px solid #2AAA8A;
 }
 
 #myDiv {
