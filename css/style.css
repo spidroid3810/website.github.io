@@ -17,19 +17,27 @@ position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-background:transparent;
-box-shadow: 0 0 0 0 #2AAA8A;
-animation:pl1 1s infinite;
 }
 @keyframes pl1 {
  100% {box-shadow: 0 0 0 30px #0000}
 }
 
+.box{
+padding: 15px;
+border: 5px solid #2AAA8A;
+transform: rotate(45deg);
+background: #fff;
+overflow: hidden;
+box-shadow: 0 0 0 0 #2AAA8A;
+animation:pl1 1s infinite;
+border-radius:20px;
+}
+
 
 .load{
-height: 200px;
-width: 200px;
-border: 5px solid #2AAA8A;
+height: 190px;
+width: 190px;
+transform: rotate(-45deg);  
 }
 
 #myDiv {
@@ -746,6 +754,10 @@ margin-top:5px;
  font-size: 50px;
  text-shadow: 0 4px #2AAA8A , 0 4px #2AAA8A; 
  
+}
+
+.read{
+font-size: 25px;
 }
 
 }
