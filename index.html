@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Aditi Equipment</title>
-<link rel="shortcut icon" href="https://spidroid3810.github.io/website.github.io/images/logo.jpg">
+<title>Aditi Equipment-Manufacturer in Vasai East</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -31,8 +34,8 @@
             <li><a href="#">Home</a></li>
             <li><a href="product.html">Products</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
          </ul>
       </nav>
             
@@ -68,6 +71,26 @@ items.
 <br>
 <a class="read" href="about.html">Read More</a>          
 <br>
+<br>
+<ul class="stat">
+                                    <div class="statscounts" id="counter">
+                                    <div class="statwrap">
+                                    <div class="stat-icon">
+                                    <img src="images/manu.png" height="100px" width="100px"> 
+                                    <h1 class="st1"><span class="stat-count" data-count="150">0</span>+</h1>
+                                    </div>
+                                    <li class="stat-title">Equipments Manufactured</li>
+                                    </div>
+                                    <div class="statwrap">
+                                    <div class="stat-icon">
+                                    <img src="images/exp.png" height="100px" width="100px"> 
+                                    <h1 class="st2"><span class="stat-count" data-count="7">0</span>+</h1>
+                                    </div>
+                                    <li class="stat-title">YEARS OF EXPERIENCE</li>
+                                    </div>
+                                    </div>
+                                    </ul>
+                        
 <br>
 <h2 class="head">Our Products</h2>
 
@@ -217,7 +240,7 @@ items.
       <p class="add">
       <div class="text-bot"><h4>Our Address</h4></div>
       <i class="fa-solid fa-map-marker-alt"></i> Shop No. 14,Shradha Apt,<br>Shivaji Nagar,Near Rajprabha,<br>Golaninaka,Waliv,Vasai(E).<br>Dist.Palghar 401208.<br>
-       <i class="fa-solid fa-mobile-phone"></i> +91 8805218016 / +91 9307522470<br>
+       <i class="fa-solid fa-phone"></i> +91 8805218016 / +91 9307522470<br>
        <i class="fa-solid fa-envelope"></i> aditiequipment@gmail.com<br>
       </p>
       </div>
@@ -241,14 +264,14 @@ items.
       <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
       <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
       <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-      <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="http://wa.me/918805218016" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
       </div>
       </div>
       </div>
       <br>
       <br>
       <br> 
-      <footer>© Aditi Equipment | All Rights Reserved 2023</footer>            
+      <footer>&copy; Aditi Equipment | All Rights Reserved 2023</footer>            
       
      
       </div>
@@ -261,6 +284,12 @@ items.
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
       AOS.init();    
+      
+      (function($){
+      $(document).on('contextmenu', 'img', function() {
+      return false;
+      })
+      })(jQuery);
       
       function reInitCount(){
       $(".stat-count").each(function() {
